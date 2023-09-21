@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+}
+body{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #130E1F, #390373);
+}
+
+ul{
+    background-color: #60489D;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    justify-content: space-between;
+    /*justify-content: center;*/
+}
+ul li{
+    font-size: 32px;
+    color: white;
+    list-style: none;
+    /*border-left: solid white;*/
+}
+.nav-button{
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.nav-button:hover{
+}
+
+
+.top-container{
+    height: 100%;
+    width: 100%;
+}
+
+.first-section{
+    height: 100vh;
+    /*width: 100vw;*/
+    max-width: 1920px;
+    max-height: fit-content;
+
+    border-bottom: solid white 0.2em;
+    width: 90%;
+    margin: 0 auto;
+;
+}
+
+.sec-section{
+    background-color: #130E1F;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar{
+    width: 100%;
+    height: fit-content;
+    margin: 1rem auto;
+    transition: width 1s;
+
+
+}
+
+
+h1{
+    color: white;
+    font-size: 7rem;
+
+    width: 100%;
+}
+
+.content{
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.content p{
+    color: white;
+    font-size: 2rem;
+    line-height: 4rem;
+    text-align: left;
+}
+
+.content img{
+    width: 35%;
+    border-radius: 20%;
+}
+.fixedElement {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    transition: width 1s;
+    /*transition: left 1s linear;*/
+
+
+
+}
+
+.intro{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #60489D;
+    padding: 2rem;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+
+
+
+/*nav button styling*/
+.coolBeans {
+    border: 2px solid transparent;
+    border-radius: 3rem;
+    color: #60489D;
+    font-size: 4rem;
+    font-weight: 100 ;
+    overflow :hidden;
+    padding: 1rem 2rem;
+    position :relative;
+    text-decoration: none;
+    transition :.2s transform ease-in-out;
+    will-change: transform;
+    z-index: 0;
+    &::after {
+        background-color : #342075;
+        border-radius: 3rem;
+        content: '' ;
+        display: block ;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0 ;
+        top: 0;
+        transform: translate(-100%, 0) rotate(10deg) ;
+        transform-origin: top left;
+        transition: .2s transform ease-out;
+        will-change:transform;
+        z-index: -1;
+    }
+    &:hover::after {
+        transform: translate(0, 0);
+    }
+    &:hover {
+        border: 2px solid transparent;
+        color :indigo;
+        transform: scale(1.05);
+        will-change: transform;
+    }
+}
+
+

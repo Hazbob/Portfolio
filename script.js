@@ -1,6 +1,9 @@
 const stickyNavTarget = document.querySelector(".content")
 const navBar = document.querySelector(".nav-bar")
-const portfolio_section = document.querySelector('.sec-section')
+const portfolioSection = document.querySelector('.sec-section')
+const homeButton = document.querySelector('.home')
+const portfolioButton = document.querySelector('.my-work')
+const homeSection = document.querySelector('#sec1')
 const width = navBar.offsetWidth
 let options = {
     root: null,
@@ -11,7 +14,6 @@ let options = {
 const stickyNavLogic = function(entries, observer){
     entries.forEach((entry) => {
         if(entry.isIntersecting) {
-            console.log(entry)
             //.fixedElement {
             //     position:fixed;
             //     top:0;
@@ -24,7 +26,7 @@ const stickyNavLogic = function(entries, observer){
 
 
         }else{
-            console.log(entry)
+
             navBar.classList.add("fixedElement")
 
 
@@ -35,8 +37,31 @@ let stickyNavObserver = new IntersectionObserver(stickyNavLogic, options);
 
 stickyNavObserver.observe(stickyNavTarget)
 
-const currentPageLogic = function(){
+const currentPageLogic = function(entries, observer){
+    entries.forEach(entry =>{
+        if(entry.isIntersecting){
+            if(entry.target === portfolioSection){
+                portfolioButton.classList.add('underline')
+            }
+            if(entry.target === homeSection){
+               homeButton.classList.add('underline')
+            }
+        }else{
+            portfolioButton.classList.remove('underline')
+            homeButton.classList.remove('underline')
+
+        }
+
+    })
 
 }
+const optionsForCurrentPage = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.9,
+}
 
-const currentPageObserver = new IntersectionObserver()
+const currentPageObserver = new IntersectionObserver(currentPageLogic, optionsForCurrentPage)
+
+currentPageObserver.observe(portfolioSection)
+currentPageObserver.observe(homeSection)

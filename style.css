@@ -18,6 +18,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0rem;
   justify-content: space-between;
+  height: 4rem;
   /*justify-content: center;*/
 }
 .nav-items {
@@ -67,7 +68,6 @@ s .top-container {
 
 .nav-bar {
   width: 100%;
-  height: fit-content;
   margin: 1rem auto;
   transition: width 1s;
 }

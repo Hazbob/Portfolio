@@ -73,7 +73,7 @@ s .top-container {
 .nav-bar {
   width: 100%;
   margin: 1rem auto;
-  transition: width 1s;
+  position: fixed;
 }
 
 #title{

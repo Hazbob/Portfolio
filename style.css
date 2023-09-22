@@ -23,13 +23,13 @@ a{
   padding: 0rem;
   justify-content: space-between;
   height: 4rem;
-  /*justify-content: center;*/
+
 }
 .nav-items {
   font-size: 2rem;
   color: white;
   list-style: none;
-  /*border-left: solid white;*/
+
 }
 #me{
   border: solid white 1rem;
@@ -58,7 +58,6 @@ s .top-container {
   max-width: 1920px;
   max-height: fit-content;
 
-  border-bottom: solid white 0.2em;
   width: 90%;
   margin: 10rem auto;
 }
@@ -250,10 +249,10 @@ s .top-container {
     padding: 0;
   }
   .portfolio-item{
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 1rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 2rem;
+
   }
   .nav-item-container{
     height: 3rem;
@@ -308,11 +307,19 @@ s .top-container {
   .portfolio-icons{
     height: fit-content;
   }
-  .icon-img{
-    height: 2rem;
-  }
+
+
+
+}
+
+@media screen and (max-width: 700px){
   .intro-paragraphs{
     margin-top: 0;
   }
-
+  .icon-img{
+    height: 2rem;
+  }
+  .portfolio-item{
+    margin-top:6rem;
+  }
 }

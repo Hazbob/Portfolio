@@ -33,7 +33,7 @@ const stickyNavLogic = function(entries, observer){
         }
     })
 }
-let stickyNavObserver = new IntersectionObserver(stickyNavLogic, options);
+// let stickyNavObserver = new IntersectionObserver(stickyNavLogic, options);
 
 stickyNavObserver.observe(stickyNavTarget)
 

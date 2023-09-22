@@ -60,7 +60,7 @@ s .top-container {
 
   border-bottom: solid white 0.2em;
   width: 90%;
-  margin: 0 auto;
+  margin: 10rem auto;
 }
 
 .sec-section {
@@ -95,7 +95,10 @@ s .top-container {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+#sec1{
+  position: relative;
+  top: -250px;
+}
 .paragraphs {
   margin-top: 1rem;
   color:  #19486c;
@@ -124,7 +127,7 @@ s .top-container {
   position: fixed;
   width: 100%;
   left: 0%;
-  top: 0%;
+  top: 0;
   transition: width 1s;
   margin: 0 auto;
   /*transition: left 1s linear;*/
@@ -136,7 +139,8 @@ s .top-container {
   margin-top: 5rem;
   background-color: #b0d3ed;
   padding: 2rem;
-  border-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
   justify-content: space-between;
   overflow: hidden;
 }
@@ -213,6 +217,9 @@ s .top-container {
   border-radius: 10px;
   padding: 2rem;;
 }
+.sec1-img{
+  height: 20%;
+}
 
 
 .portfolio-screenshot{
@@ -249,7 +256,7 @@ s .top-container {
   }
 #title {
     color: white;
-    font-size: 2.5em;
+    font-size: 2em;
     width: 100%;
   }
   .intro {
@@ -279,6 +286,9 @@ s .top-container {
   }
   .sec-section{
     padding-top:0;
+  }
+  .first-section{
+    margin: 5rem auto;
   }
 
 }

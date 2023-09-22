@@ -108,7 +108,8 @@ s .top-container {
   border: solid white 4px;
   padding: 1rem;
   border-radius: 10px;
-}.intro-paragraphs {
+}
+.intro-paragraphs {
   margin-top: 1rem;
   color:  #19486c;
   font-size: 2rem;
@@ -244,6 +245,19 @@ s .top-container {
 
 
 @media screen and (max-width: 1000px) {
+
+  .coolBeans{
+    padding: 0;
+  }
+  .portfolio-item{
+    margin-top: 3rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .nav-item-container{
+    height: 3rem;
+  }
   .portfolio-item{
     max-width: 90vw;
   }
@@ -261,6 +275,7 @@ s .top-container {
   }
   .intro {
     margin-top: 1em;
+    padding: 1rem;
   }
 
   .content p {
@@ -289,6 +304,15 @@ s .top-container {
   }
   .first-section{
     margin: 5rem auto;
+  }
+  .portfolio-icons{
+    height: fit-content;
+  }
+  .icon-img{
+    height: 2rem;
+  }
+  .intro-paragraphs{
+    margin-top: 0;
   }
 
 }

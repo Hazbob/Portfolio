@@ -1,52 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Harry.dev</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="top-container">
-    <main class="first-section">
-<!--        <nav id="nav-bar">-->
-<!--            <ul>-->
-<!--                <li>About</li>-->
-<!--                <li>My Skills</li>-->
-<!--                <li>Work</li>-->
-<!--                <li>Contact</li>-->
-<!--            </ul>-->
-<!--        </nav>-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-container">
+      <main class="first-section" id="sec1">
         <article class="content">
-            <h1>Hi, i'm Harry. I Design & Build <br> Software</h1>
-            <section class="intro">
-                <p>I'm an enthusiastic full-stack JavaScript developer who's truly passionate about my craft. I harness the magic of React and Express.js to weave together beautiful, contemporary, and user-friendly web applications. My journey in web development has been marked by a relentless pursuit of excellence in both frontend and backend technologies. I take immense pride in crafting web experiences that not only captivate users but also ensure accessibility for all. For me, it's not just about code; it's about creating digital worlds that leave a lasting impact.</p>
-                <img src="../first-test/icons/harry.JPG" alt="picture of Harry">
-            </section>
+          <h1 id="title">
+            Hi, i'm Harry, and I'm a <br />
+           <span id="title-styling">Software Engineer</span>
+          </h1>
+          <section class="intro">
+            <p class="paragraphs">
+              It's safe to say I've taken quite the scenic route to arrive at being a software developer. From Farming, to woodworking, and even a detour into business admin and customer service – I've been a bit of a professional wanderer. But, somehow, I stumbled into the world of coding, where I am still building things, just with much more satisfaction and (slightly) less backache.
+            </p>
+            <img
+              id="me"
+              src="../first-test/icons/harry.JPG"
+              alt="picture of Harry"
+            />
+          </section>
 
-            <nav class="nav-bar">
-                <div class="nav-container">
-
-
-                    <ul>
-                    <button class="nav-button coolBeans"><li>About</li></button>
-                    <button class="nav-button coolBeans"><li>My Skills</li></button>
-                    <button class="nav-button coolBeans"><li>Work</li></button>
-                    <button class="nav-button coolBeans"><li>Contact</li></button>
-                    </ul>
-                </div>
-            </nav>
-            
+          <nav class="nav-bar">
+            <div class="nav-container">
+              <ul class="nav-item-container">
+                <button class="nav-button coolBeans "><li class="nav-items">About</li></button>
+                <button class="nav-button coolBeans"><li class="nav-items">My Skills</li></button>
+                <button class="nav-button coolBeans"><li class="nav-items">Work</li></button>
+                <button class="nav-button coolBeans"><li class="nav-items">Contact</li></button>
+              </ul>
+            </div>
+          </nav>
         </article>
-    </main>
-    <main class="sec-section"></main>
 
 
+      </main>
+      <main class="sec-section">
+        <div id="portfolio">
+          <ul>
+            <li class="portfolio-item">
+              <h1>Portfolio</h1>
+              <img class="portfolio-screenshot" src="./images/portfolio-screen-grab.png" alt="portfolio screenshot">
+              <aside class="port-content-container">
+              <p class="paragraphs">This is my portfolio site, written completely in vanilla Javascript, CSS3 and of course, HTML5. I suppose you reading this now is some kind of portfolio-ception.</p>
+              <span class="portfolio-icons"><a href="#sec1"><img src="./images/003-external-link.png" alt="external link icon"></a>   <a href="https://github.com/Hazbob/Portfolio"><img src="./images/001-github.png" alt="github icon"></a></span>
+              <span class="portfolio-icons"><img src="./images/003-html.png" alt="html logo">  <img src="./images/002-css-3.png" alt="css logo">  <img
+                      src="./images/001-js.png" alt="javascript logo"></span>
+              </aside>
+            </li>
+          </ul>
+        </div>
 
-</div>
-
-</body>
+      </main>
+      <main class="third-section"></main>
+      <main class="fourth-section"></main>
+    </div>
+  </body>
 </html>

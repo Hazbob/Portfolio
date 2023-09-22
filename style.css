@@ -4,11 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Belanosima", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   height: 100%;
   width: 100%;
   background: #dbeeff;
+}
+a{
+  text-decoration: none;
 }
 
 .nav-item-container {

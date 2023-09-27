@@ -67,3 +67,5 @@ const currentPageObserver = new IntersectionObserver(currentPageLogic, optionsFo
 
 currentPageObserver.observe(portfolioSection)
 currentPageObserver.observe(homeSection)
+
+

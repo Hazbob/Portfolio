@@ -4,6 +4,8 @@ const portfolioSection = document.querySelector('.sec-section')
 const homeButton = document.querySelector('.home')
 const portfolioButton = document.querySelector('.my-work')
 const homeSection = document.querySelector('.first-section')
+const aboutMeSection = document.querySelector('.third-section')
+const aboutMeButton = document.querySelector('.about-me')
 const width = navBar.offsetWidth
 let options = {
     root: null,
@@ -39,18 +41,22 @@ let options = {
 
 const currentPageLogic = function(entries, observer){
     entries.forEach(entry =>{
-        console.log(entry)
+
         if(entry.isIntersecting){
             if(entry.target === portfolioSection){
                 portfolioButton.classList.add('underline')
             }
             if(entry.target === homeSection){
-                console.log('entry is the home section')
                homeButton.classList.add('underline')
+            }
+            if(entry.target === aboutMeSection){
+                aboutMeButton.classList.add('underline')
+
             }
         }else{
             portfolioButton.classList.remove('underline')
             homeButton.classList.remove('underline')
+            aboutMeButton.classList.remove('underline')
 
         }
 
@@ -67,5 +73,6 @@ const currentPageObserver = new IntersectionObserver(currentPageLogic, optionsFo
 
 currentPageObserver.observe(portfolioSection)
 currentPageObserver.observe(homeSection)
+currentPageObserver.observe(aboutMeSection)
 
 

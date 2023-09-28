@@ -66,7 +66,9 @@ s .top-container {
   background-color: #19486c;
   min-height: 100vh;
   min-width: 100vw;
-  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar {
@@ -139,8 +141,7 @@ s .top-container {
   margin-top: 5rem;
   background-color: #b0d3ed;
   padding: 2rem;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
+  border-radius: 10px;
   justify-content: space-between;
   overflow: hidden;
 }
@@ -241,6 +242,84 @@ s .top-container {
 
 }
 
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: solid #b0d3ed 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+#experience-title{
+  margin: 2rem;
+  font-size: 3rem;
+  color: #19486c;
+
+}
+
+.portfolio-title{
+  color: #19486c;
+  font-size: 2rem;
+}
+
+.third-section{
+  background-color: #19486c;
+  min-height: 100vh;
+  min-width: 100vw;
+  border-top: solid white 1rem;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+
+}
+.skills-grid img{
+  margin: 0 auto;
+}
+
+
+.about-me-content{
+  display: flex;
+  align-items: center;
+  background-color: #b0d3ed;
+  border-radius: 10px;
+  overflow: hidden;
+  color:  #19486c;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  margin: 0 auto;
+flex-direction: column;
+  padding: 1rem;
+}
+
+.paragraph-wrapper{
+  width: 90%;
+}
+
+.sub-page-title{
+  margin: 2rem;
+  font-size: 3rem;
+}
+
+.about-me-img{
+  width: 30%;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width: 1000px) {
@@ -319,7 +398,31 @@ s .top-container {
   .icon-img{
     height: 2rem;
   }
+<<<<<<< HEAD
   .portfolio-item{
     margin-top:6rem;
   }
+=======
+
+  .skills-grid{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .about-me-content{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: left;
+    height: 100%;
+  }
+  .about-me-img{
+    position: fixed;
+    display: none;
+  }
+
+
+>>>>>>> 1e4d78a7ab53b95db55e8b3c7ca32a1ed744553b
 }
+
+
+
+

@@ -23,13 +23,13 @@ a{
   padding: 0rem;
   justify-content: space-between;
   height: 4rem;
-  /*justify-content: center;*/
+
 }
 .nav-items {
   font-size: 2rem;
   color: white;
   list-style: none;
-  /*border-left: solid white;*/
+
 }
 #me{
   border: solid white 1rem;
@@ -58,7 +58,6 @@ s .top-container {
   max-width: 1920px;
   max-height: fit-content;
 
-  border-bottom: solid white 0.2em;
   width: 90%;
   margin: 10rem auto;
 }
@@ -111,7 +110,6 @@ s .top-container {
   padding: 1rem;
   border-radius: 10px;
 }
-
 .intro-paragraphs {
   margin-top: 1rem;
   color:  #19486c;
@@ -330,10 +328,10 @@ flex-direction: column;
     padding: 0;
   }
   .portfolio-item{
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 1rem;
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding-bottom: 2rem;
+
   }
   .nav-item-container{
     height: 3rem;
@@ -355,6 +353,7 @@ flex-direction: column;
   }
   .intro {
     margin-top: 1em;
+    padding: 1rem;
   }
 
   .content p {
@@ -387,9 +386,23 @@ flex-direction: column;
   .portfolio-icons{
     height: fit-content;
   }
+
+
+
+}
+
+@media screen and (max-width: 700px){
+  .intro-paragraphs{
+    margin-top: 0;
+  }
   .icon-img{
     height: 2rem;
   }
+<<<<<<< HEAD
+  .portfolio-item{
+    margin-top:6rem;
+  }
+=======
 
   .skills-grid{
     grid-template-columns: 1fr;
@@ -407,6 +420,7 @@ flex-direction: column;
   }
 
 
+>>>>>>> 1e4d78a7ab53b95db55e8b3c7ca32a1ed744553b
 }
 
 
